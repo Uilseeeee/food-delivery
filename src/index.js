@@ -10,13 +10,13 @@ let newUser = [{id: 1, name: 'Uilse'}];
 app.post
 ('/users', (req, res) => {
     res.send([{
-        id: 2,
+        id: 1,
         name: 'Uilse'
     }]);
 });
 app.get('/users', (req, res) => {
     res.send([{
-        id: 2,
+        id: 1,
         name: 'Uilse'
     }]);
 });
