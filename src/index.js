@@ -1,28 +1,24 @@
-const express = require('express');
+import express from 'express';
+import { getUsers } from './resolvers/users/get-users.js';
+import { createUser } from './resolvers/users/create-users.js';
+import { deleteUser } from './resolvers/users/delete-users.js';
+// import { updateUser } from './resolvers/users/update-users.js';
+
 const app = express();
 const port = 3000;
 
-var newUsers = [
-    {id: 2, name: 'Uilse'}
-];
-let newUser = [{id: 1, name: 'Uilse'}];
+app.use(express.json());
 
-app.post
-('/users', (req, res) => {
-    res.send([{
-        id: 1,
-        name: 'Uilse'
-    }]);
-});
-app.get('/users', (req, res) => {
-    res.send([{
-        id: 1,
-        name: 'Uilse'
-    }]);
-});
-app.put('/users', (req, res) => {
-    res.push(newUsers);
-});
+
+
+
+app.post('/users', createUser)
+
+app.get('/users', getUsers);
+
+app.delete('/users', deleteUser);
+
+// app.put ('/users', updateUser);
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
