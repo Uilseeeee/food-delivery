@@ -1,15 +1,1 @@
-[
-  { "id": 8, 
-   "name": "Tuguldur",
-   "username": "Uilsee",
-   "password": "123"
-},
-  {
-    "id": 3,
-    "name": "Baagii",
-    "username": "Uilseee",
-   "password": "1234"
-  },
-  { "id": 4, "name": "Inder" },
-  { "id": 8, "name": "john" }
-]
+[{"id":8,"name":"Tuguldur","username":"Uilsee","password":"123"},{"id":3,"name":"Baagii","username":"Uilseee","password":"1234"},{"id":4,"name":"Inder"},{"id":8,"name":"john"},{},{},{},{}]
