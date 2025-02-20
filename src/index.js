@@ -1,5 +1,6 @@
 import express from "express";
 import { userRouter } from "./routes/users-router.js";
+import { moviesRouter } from "./routes/movie-router.js";
 
 
 
@@ -10,7 +11,7 @@ app.use(express.json());
 
 app.use("/users", userRouter);
 
-app.use("/movies", userRouter);
+app.use("/movies", moviesRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

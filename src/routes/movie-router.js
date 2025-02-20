@@ -1,12 +1,12 @@
-import { createMovies } from "../resolvers/movies/create-movies";
-import { deleteMovies } from "../resolvers/movies/delete-movies";
-import { getMovies } from "../resolvers/movies/get-movies";
-import { updateMovies } from "../resolvers/movies/update-movies";
+import { createMovies } from "../resolvers/movies/create-movies.js";
+import { deleteMovies } from "../resolvers/movies/delete-movies.js";
+import { getMovies } from "../resolvers/movies/get-movies.js";
+import { updateMovies } from "../resolvers/movies/update-movies.js";
 import { Router } from "express";
 
-export const movieRouter = Router();
+export const moviesRouter = Router();
 
-movieRouter.get("/", getMovies)
-movieRouter.post("/", createMovies)
-movieRouter.put("/", updateMovies)
-movieRouter.delete("/", deleteMovies)
+moviesRouter.get("/", getMovies)
+moviesRouter.post("/", createMovies)
+moviesRouter.put("/", updateMovies)
+moviesRouter.delete("/", deleteMovies)
